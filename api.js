@@ -4,25 +4,23 @@ const chatbox = document.querySelector(".chatbox");
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
-let userMessage = null; // Variable to store user's message
-const API_KEY = "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"; // Paste your API key here
+let userMessage = null; 
+// const API_KEY = "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"; 
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
-    // Create a chat <li> element with passed message and className
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", `${className}`);
     let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
     chatLi.innerHTML = chatContent;
     chatLi.querySelector("p").textContent = message;
-    return chatLi; // return chat <li> element
+    return chatLi; 
 }
 
 const generateResponse = (chatElement) => {
     const API_URL = "https://api.openai.com/v1/chat/completions";
     const messageElement = chatElement.querySelector("p");
 
-    // Define the properties and message for the API request
     const requestOptions = {
         method: "POST",
         headers: {
@@ -35,7 +33,7 @@ const generateResponse = (chatElement) => {
         })
     }
 
-    // Send POST request to API, get response and set the reponse as paragraph text
+ 
     fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
         messageElement.textContent = data.choices[0].message.content.trim();
     }).catch(() => {
