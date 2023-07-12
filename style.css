@@ -323,7 +323,7 @@ h2{
 	font-weight: 500;
 }
 
-.footer div{
+.footer .col-2{
 	text-align: center;
 
 }
@@ -349,8 +349,12 @@ h2{
 
 .col-col a{
 	margin-top: 10%;
+	
 }
 
+.col-3{
+	left: 100px;
+}
 form input{
 	width: 400px;
 	height: 45px;
@@ -377,8 +381,8 @@ form button{
 }
 
 .social-icon{
-	font-size: 27px;
-	margin: 10px;
+	font-size: 29px;
+	margin: 6px;
 	cursor: pointer;
 }
 
@@ -545,6 +549,7 @@ form button{
 
 	.col-col a{
 		margin-top: 5%;
+	
 	}
 	
 
@@ -579,6 +584,11 @@ form button{
 		font-size: 29px;
 		margin: 10px;
 		cursor: pointer;
+	
+	}
+
+	.footer, .col-1 .col-3{
+		text-align: center;
 	
 	}
 	
