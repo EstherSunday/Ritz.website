@@ -57,11 +57,22 @@ body{
 }
 
 .icon{
-	margin-top: 17px;
-	margin-right: -19%;
+	margin-top: 9px;
+	margin-right: -18%;
 	font-size: 28px;
 	cursor: pointer;
 
+}
+
+.header button{
+	margin-top:9px;
+	padding: 25%;
+	margin-left: -95%;
+	cursor: pointer;
+	border: none;
+		border-radius: 10px;
+		color: black;
+		font-weight: bold;
 }
 
 .icon i{
@@ -457,12 +468,23 @@ form button{
 
 		.icon{
 			margin-top: 17px;
-			margin-right: 34%;
+			margin-right: 10%;
 			font-size: 26px;
 			cursor: pointer;
 		
 		
 			
+		}
+
+		.header button{
+			margin-top:9px;
+			padding: 25%;
+			margin-left: -251%;
+			cursor: pointer;
+			border: none;
+				border-radius: 10px;
+				color: black;
+				font-weight: bold;
 		}
 		
 	 /* HOME */
@@ -489,7 +511,7 @@ form button{
 
 	.shop1{
 		margin-top: 8px;
- margin-left: 170px;
+ margin-left: 120px;
  background-color: lightblue;
   padding: 10px;
   cursor: pointer;

@@ -65,7 +65,7 @@ signInButton.addEventListener("click", (e) => {
     console.log("user", user.email);
 
     alert("login was successful")
-    window.location = "index.html";
+    window.location = "index2.html";
 
 
   })
